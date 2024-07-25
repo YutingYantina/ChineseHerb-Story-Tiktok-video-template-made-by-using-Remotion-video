@@ -1,4 +1,3 @@
-// src/HelloWorld/TitleImage.tsx
 import React from 'react';
 import { AbsoluteFill, Img } from 'remotion';
 
