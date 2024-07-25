@@ -13,3 +13,4 @@ npm start
 ```console
 npm run build
 ```
+![My Image](https://github.com/YutingYantina/ChineseHerb-Story-Tiktok-video-template-made-by-using-Remotion-video/blob/main/Screenshot.png)
