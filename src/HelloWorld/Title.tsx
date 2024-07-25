@@ -8,7 +8,7 @@ const title: React.CSSProperties = {
   fontSize: 100,
   textAlign: 'center',
   position: 'absolute',
-  bottom: 200, // 调整文本位置
+  bottom: 200, 
   width: '100%',
   color: '#FFFFFF', 
   textShadow: '2px 2px 4px black, -2px -2px 4px black, -2px 2px 4px black, 2px -2px 4px black',
