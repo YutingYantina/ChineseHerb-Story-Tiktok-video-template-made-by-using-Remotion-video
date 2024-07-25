@@ -1,6 +1,6 @@
 # ChineseHerb Story Tiktok video template made by using Remotion video
 
-You can see the video under the out folder
+You can see the generated video HelloWorld.mp4 
 
 **Start Preview**
 
