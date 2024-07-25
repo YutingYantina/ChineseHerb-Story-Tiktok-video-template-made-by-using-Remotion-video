@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@remotion/cli": "4.0.185",
+    "@remotion/streaming": "^4.0.185",
     "@remotion/zod-types": "4.0.185",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

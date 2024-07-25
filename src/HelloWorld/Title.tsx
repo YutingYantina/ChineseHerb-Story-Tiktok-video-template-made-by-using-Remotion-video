@@ -1,21 +1,23 @@
-import React from "react";
-import { spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { FONT_FAMILY } from "./constants";
+// src/HelloWorld/Title.tsx
+import React from 'react';
+import { spring, useCurrentFrame, useVideoConfig } from 'remotion';
 
 const title: React.CSSProperties = {
-  fontFamily: FONT_FAMILY,
-  fontWeight: "bold",
+  fontFamily: 'Arial, Gadget, sans-serif',
+  fontWeight: 'bold',
   fontSize: 100,
-  textAlign: "center",
-  position: "absolute",
-  bottom: 160,
-  width: "100%",
+  textAlign: 'center',
+  position: 'absolute',
+  bottom: 200, // 调整文本位置
+  width: '100%',
+  color: '#FFFFFF', 
+  textShadow: '2px 2px 4px black, -2px -2px 4px black, -2px 2px 4px black, 2px -2px 4px black',
 };
 
 const word: React.CSSProperties = {
   marginLeft: 10,
   marginRight: 10,
-  display: "inline-block",
+  display: 'inline-block',
 };
 
 export const Title: React.FC<{
@@ -25,10 +27,10 @@ export const Title: React.FC<{
   const videoConfig = useVideoConfig();
   const frame = useCurrentFrame();
 
-  const words = titleText.split(" ");
+  const words = titleText.split(' ');
 
   return (
-    <h1 style={title}>
+    <h1 style={{ ...title, color: titleColor }}>
       {words.map((t, i) => {
         const delay = i * 5;
 
@@ -45,7 +47,6 @@ export const Title: React.FC<{
             key={t}
             style={{
               ...word,
-              color: titleColor,
               transform: `scale(${scale})`,
             }}
           >
